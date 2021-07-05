@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home</title>
+	{% load static%}
+	<link rel="stylesheet" href="{%static 'index.css'%}">
+</head>
+<body>
+	<div id="description">
+		<h1>This is home page of the website</h1>
+	</div>
+
+	<div id="input">
+		<form>
+			<input type="text"> name
+			<button type="submit">Click me to submit</button>
+		</form>
+	</div>
+	<div>
+		<a href="{% url 'result' %}">Click here to go to result</a>
+	</div>
+	
+</body>
+</html>
