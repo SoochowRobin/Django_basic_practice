@@ -4,4 +4,6 @@ def home(request):
 	return render(request, 'index.html')
 
 def result(request):
-	return render(request, 'result.html')
+	username = request.GET['username']
+	username = username.upper()
+	return render(request, 'result.html',{'user_name': username})
